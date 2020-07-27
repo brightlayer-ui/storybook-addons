@@ -4,8 +4,8 @@ import { IconButton } from '@storybook/components';
 import { API } from '@storybook/api';
 import { DIR_CHANGE_EVENT, DIRECTION_STORAGE_ID } from './constants';
 import { Direction } from './types';
-import DirectionLTR from './icons/DirectionLTR';
-import DirectionRTL from './icons/DirectionRTL';
+import {LTR} from "./icons/LTR";
+import {RTL} from "./icons/RTL";
 
 interface DirButtonProps {
   api: API;
@@ -47,6 +47,7 @@ export const DirButton: React.FC<DirButtonProps> = (props) => {
 
   return (
     <IconButton
+        style={{ borderBottom: direction === 'ltr' ? '' : 'solid 3px #eef0f0'}}
       title={
         direction === 'ltr'
           ? 'Toggle Right-to-Left Direction'
@@ -54,7 +55,7 @@ export const DirButton: React.FC<DirButtonProps> = (props) => {
       }
       onClick={toggleDirection}
     >
-      {direction === 'ltr' ? <DirectionLTR /> : <DirectionRTL />}
+      {direction === 'ltr' ? <LTR /> : <RTL />}
     </IconButton>
   )
 };

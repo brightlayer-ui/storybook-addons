@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const DirectionLTR = () => (
+export const LTR = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
@@ -15,5 +15,3 @@ const DirectionLTR = () => (
     <path d="M0 0h24v24H0z" fill="none" />
   </svg>
 );
-
-export default DirectionLTR;
