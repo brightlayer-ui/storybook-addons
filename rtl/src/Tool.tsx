@@ -48,7 +48,7 @@ export const DirButton: React.FC<DirButtonProps> = (props) => {
 
   return (
     <IconButton
-      style={{ borderBottom: direction === "ltr" ? "" : "solid 3px #eef0f0" }}
+      style={{ borderBottom: direction === "rtl" ? "solid 3px #eef0f0" : "" }}
       title={
         direction === "ltr"
           ? "Toggle Right-to-Left Direction"
