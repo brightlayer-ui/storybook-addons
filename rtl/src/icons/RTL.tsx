@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 export const RTL = () => (
   <svg
@@ -8,7 +8,7 @@ export const RTL = () => (
     enableBackground="new 0 0 129 129"
     height={22}
     style={{
-      fill: 'currentColor'
+      fill: "currentColor",
     }}
   >
     <path

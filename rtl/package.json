@@ -26,7 +26,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "prettier": "prettier \"src/**/**.{ts,json,css,scss,html}\" --write",
+    "prettier": "prettier \"src/**/**.{ts,json,css,scss,html,tsx}\" --write",
     "lint": "eslint \"src/**/**.tsx\"",
     "lint:fix": "eslint \"src/**/**.tsx\" --fix"
   },
