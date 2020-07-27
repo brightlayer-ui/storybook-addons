@@ -3,7 +3,7 @@
 This storybook addon provides a Right-to-Left toggle used to test your component's bidirectionality support.  
 When this addon is active, it sets the current story body's `dir` attribute to `rtl`.
 
-This addon assumes the default text orientation of the parent storybook app will be Left-to-Right.
+This addon assumes the default text orientation of the parent storybook app is Left-to-Right.
 
 
 ## Installation
