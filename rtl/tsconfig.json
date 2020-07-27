@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "types": ["node"],
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "jsx": "react",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false
+  },
+  "include": [
+    "src"
+  ]
+}
