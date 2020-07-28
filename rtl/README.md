@@ -33,7 +33,7 @@ addons: [
 
 This addon can be tested locally by using `npm link` or `yarn link` commands.
 
-From the addon's root folder, run to following to automatically rebuild the addon when changes occur:
+From the addon's root folder, run the following to rebuild the addon when changes occur:
 
 ```yarn watch```
 
