@@ -7,12 +7,11 @@ import { Direction } from "./types";
 import { LTR } from "./icons/LTR";
 import { RTL } from "./icons/RTL";
 
+localStorage.setItem(DIRECTION_STORAGE_ID, 'ltr');
+
 interface DirButtonProps {
   api: API;
 }
-
-// Use this to detect if the page is being loaded for the first time.
-let init = false;
 
 const emitChannelEvent = (api: API, dir: Direction): void => {
   api.getChannel().emit(DIR_CHANGE_EVENT, dir);
@@ -30,11 +29,9 @@ const invertDir = (dir: Direction) => (dir === "rtl" ? "ltr" : "rtl");
 
 export const DirButton: React.FC<DirButtonProps> = (props) => {
   const { api } = props;
-  const defaultDir = init ? localStorage.getItem(DIRECTION_STORAGE_ID) : "ltr";
   const [direction, setDirection] = useState<Direction>(
-    defaultDir as Direction
+      localStorage.getItem(DIRECTION_STORAGE_ID) as Direction
   );
-  init = true;
 
   const toggleDirection = useCallback(() => {
     setDirection((dir: Direction) => {

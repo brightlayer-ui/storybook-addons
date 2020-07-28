@@ -2,5 +2,6 @@ import {DIRECTION_STORAGE_ID} from "./constants";
 
 export * from "./constants";
 
-export const getDirection = () => localStorage.getItem(DIRECTION_STORAGE_ID) || 'ltr';
+localStorage.setItem(DIRECTION_STORAGE_ID, 'ltr');
+export const getDirection = () => localStorage.getItem(DIRECTION_STORAGE_ID);
 
