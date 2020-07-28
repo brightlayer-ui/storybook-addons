@@ -7,7 +7,7 @@ import { Direction } from "./types";
 import { LTR } from "./icons/LTR";
 import { RTL } from "./icons/RTL";
 
-localStorage.setItem(DIRECTION_STORAGE_ID, 'ltr');
+localStorage.setItem(DIRECTION_STORAGE_ID, "ltr");
 
 interface DirButtonProps {
   api: API;
@@ -30,7 +30,7 @@ const invertDir = (dir: Direction) => (dir === "rtl" ? "ltr" : "rtl");
 export const DirButton: React.FC<DirButtonProps> = (props) => {
   const { api } = props;
   const [direction, setDirection] = useState<Direction>(
-      localStorage.getItem(DIRECTION_STORAGE_ID) as Direction
+    localStorage.getItem(DIRECTION_STORAGE_ID) as Direction
   );
 
   const toggleDirection = useCallback(() => {
