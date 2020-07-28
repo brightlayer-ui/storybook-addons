@@ -22,7 +22,7 @@ addons: [
 ]
 ```            
 
-> **Angular Projects**: No further setup is required.
+> **Angular Components**: If your component uses the Direction service, use the exported function `getDirection()` to supply the `[dir]` directive with the appropriate direction. 
 
 ## Tested Frameworks
 - Angular (^8.0.0)
