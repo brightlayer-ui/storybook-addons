@@ -4,6 +4,7 @@
   "description": "RTL Toggle for Storybook",
   "main": "dist/index.js",
   "source": "index.ts",
+  "types": "index.d.ts",
   "files": [
     "dist",
     "README.md",
