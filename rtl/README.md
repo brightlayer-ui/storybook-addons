@@ -6,7 +6,7 @@ When this addon is active, it sets the current story body's `dir` attribute to `
 This addon assumes the default text orientation of the parent storybook app is Left-to-Right.
 
 
-## Installation
+## Installation 
 
 To install the `@pxblue/storybook-rtl-addon` run:
 
