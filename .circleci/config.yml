@@ -1,0 +1,39 @@
+version: 2
+jobs:
+    build-rtl:
+        docker:
+            - image: circleci/node:12.9.1-browsers
+        steps:
+            - checkout
+            - restore_cache:
+                  keys:
+                      - v2-dependencies-storybook-addons-{{ checksum "rtl/yarn.lock" }}
+            - run:
+                  name: Install Dependencies
+                  command: |
+                      cd rtl
+                      yarn install --frozen-lockfile
+            - save_cache:
+                  name: Save Cache
+                  paths:
+                      - rtl/node_modules
+                  key: v2-dependencies-storybook-addons-{{ checksum "rtl/yarn.lock" }}
+            - run:
+                  name: Prettier Check
+                  command: |
+                      cd rtl
+                      yarn prettier:check
+            - run:
+                  name: Lint
+                  command: |
+                      cd rtl && yarn lint
+            - run:
+                  name: Build Library
+                  command: |
+                      cd rtl && yarn build
+
+workflows:
+    version: 2
+    storybook-addons:
+        jobs:
+            - build-rtl
