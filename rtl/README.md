@@ -1,3 +1,6 @@
+![npm](https://img.shields.io/npm/v/@pxblue/storybook-rtl-addon?label=%40pxblue%2Fstorybook-rtl-addon)
+
+
 # @pxblue/storybook-rtl-addon
 
 This storybook addon provides a Right-to-Left toggle used to test your component's bidirectionality support.  
