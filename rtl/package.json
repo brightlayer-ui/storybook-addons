@@ -42,8 +42,7 @@
     "@storybook/addons": ">= 5.x",
     "@storybook/api": ">= 5.x",
     "@storybook/components": ">= 5.x",
-    "@storybook/core-events": ">= 5.x",
-    "storybook-addon-locale": ">=0.3.x"
+    "@storybook/core-events": ">= 5.x"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.10.3",
