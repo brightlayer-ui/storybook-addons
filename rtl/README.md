@@ -1,3 +1,6 @@
+![npm](https://img.shields.io/npm/v/@pxblue/storybook-rtl-addon?label=%40pxblue%2Fstorybook-rtl-addon)
+
+
 # @pxblue/storybook-rtl-addon
 
 This storybook addon provides a Right-to-Left toggle used to test your component's bidirectionality support.  
@@ -6,7 +9,7 @@ When this addon is active, it sets the current story body's `dir` attribute to `
 This addon assumes the default text orientation of the parent storybook app is Left-to-Right.
 
 
-## Installation
+## Installation 
 
 To install the `@pxblue/storybook-rtl-addon` run:
 
