@@ -1,6 +1,6 @@
 {
   "name": "@pxblue/storybook-rtl-addon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RTL Toggle for Storybook",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
