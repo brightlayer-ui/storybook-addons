@@ -22,7 +22,9 @@
     "rtl",
     "i18n",
     "bidirection",
-    "pxblue"
+    "pxblue",
+    "storybook-addon",
+    "style"
   ],
   "author": "PX Blue <pxblue@eaton.com>",
   "license": "BSD-3-Clause",
