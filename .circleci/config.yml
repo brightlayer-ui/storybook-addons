@@ -49,14 +49,7 @@ jobs:
         - run:
             name: Publish @pxblue/storybook-rtl-addon
             command:  |
-              MASTER_VERSION=`node -p "require('./package.json').version"`
-              NPM_LATEST_VERSION=`npm show @pxblue/storybook-rtl-addon version`
-              if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-              then
-                  npm publish
-              else
-                  echo "Latest version is already published."
-              fi
+              cd rtl && yarn publish:package
 
 workflows:
     version: 2
@@ -70,3 +63,4 @@ workflows:
                   branches:
                     only:
                       - master
+                      - dev
