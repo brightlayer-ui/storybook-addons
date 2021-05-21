@@ -1,6 +1,6 @@
 {
   "name": "@pxblue/storybook-rtl-addon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RTL Toggle for Storybook",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,6 +19,7 @@
     "pxblue",
     "storybook",
     "addon",
+    "addons",
     "rtl",
     "i18n",
     "bidirection",
@@ -26,6 +27,12 @@
     "storybook-addon",
     "style"
   ],
+  "storybook": {
+    "displayName": "@pxblue/storybook-rtl-addon",
+    "unsupportedFrameworks": ["vue", "web-components", "ember", "html", "riot", "mithril", "marko", "svelte", "rax", "preact", "auerlia", "marionette", "react-native"],
+    "supportedFrameworks": ["react, angular"],
+    "icon": "https://pxblue.github.io/pxblue.png"
+  },
   "author": "PX Blue <pxblue@eaton.com>",
   "license": "BSD-3-Clause",
   "bugs": {
@@ -37,6 +44,7 @@
     "watch": "tsc --watch",
     "prettier": "prettier \"src/**/**.{ts,json,css,scss,html,tsx}\" --write",
     "prettier:check": "prettier \"src/**/**.{ts,json,css,scss,html}\" --check",
+    "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
     "lint": "eslint \"src/**/**.tsx\"",
     "lint:fix": "eslint \"src/**/**.tsx\" --fix"
   },
