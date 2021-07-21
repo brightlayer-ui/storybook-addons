@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+    gh: circleci/github-cli@1.0.3
 jobs:
     build-rtl:
         docker:
@@ -52,7 +54,16 @@ jobs:
             name: Publish @pxblue/storybook-rtl-addon
             command:  |
               cd rtl && yarn publish:package -b $CIRCLE_BRANCH
-
+    tag:
+      docker:
+        - image: circleci/node:12.9.1-browsers
+      steps:
+        - checkout
+        - gh/setup
+        - run:
+            name: Tag @pxblue/storybook-rtl-addon
+            command: |
+              cd rtl && yarn tag:package -b $CIRCLE_BRANCH
 workflows:
     version: 2
     storybook-addons:
@@ -66,3 +77,10 @@ workflows:
                     only:
                       - master
                       - dev
+            - tag:
+                requires:
+                  - publish
+                filters:
+                  branches:
+                    only:
+                      - master
