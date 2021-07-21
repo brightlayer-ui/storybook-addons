@@ -45,6 +45,7 @@
     "prettier": "prettier \"src/**/**.{ts,json,css,scss,html,tsx}\" --write",
     "prettier:check": "prettier \"src/**/**.{ts,json,css,scss,html}\" --check",
     "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
+    "tag:package": "npx -p @pxblue/tag pxb-tag",
     "lint": "eslint \"src/**/**.tsx\"",
     "lint:fix": "eslint \"src/**/**.tsx\" --fix"
   },
