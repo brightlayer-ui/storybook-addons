@@ -9,7 +9,8 @@
     "dist",
     "README.md",
     "LICENSE",
-    "register.js"
+    "register.js",
+    "useDirection.js"
   ],
   "repository": {
     "type": "git",
