@@ -35,7 +35,7 @@ For detailed usage for the `getDirection` function, see the Examples section fur
 > **Angular Components**: If your component uses the Direction service, use the exported function `getDirection()` to supply the `[dir]` directive with the appropriate direction.
 
 ### useDirection
-`useDirection` is a React hook that emits any `Direction` change and can be used inside of Storybook Decorators.
+`useDirection` is a React hook that returns the current `Direction` and re-emits on every `Direction` change (when toggling the RTL sidebar button). It can be used to e.g. set values for Providers in a Decorators or Stories.
 
 
 ```ts
