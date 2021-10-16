@@ -96,7 +96,7 @@ export const reactExampleStory = () => {
 
 ## Tested Frameworks
 - Angular (^8.0.0)
-- React
+- React (^17.0.0)
 
 ## Local Testing
 
