@@ -28,14 +28,51 @@ addons: ['@pxblue/storybook-rtl-addon/register']
 This package exports two functions `getDirection` & `useDirection` that returns the current `Direction` ('rtl' or 'ltr').
 
 ### getDirection
-`getDirection` is used within Stories to access the current `Direction`.
+`getDirection` is used within Stories to access the current `Direction`.  In React, this is value is only set during the initial component mount. 
 
-For detailed usage for the `getDirection` function, see the Examples section further below.
+
+PX Blue uses this addon extensively in our storybook documentation to guarantee bidirectional support of our components and examples.
+
+To see live-example usage of this addon, click on the "Story" tab of each linked example.
+
+### Angular Usage
+
+```ts
+import { getDirection } from '@pxblue/storybook-rtl-addon';
+
+export const angularExampleStory = () => ({
+    template: `
+        <div>{{direction}}</div>
+    `,
+    props: {
+        direction: getDirection
+    }
+});
+
+```
 
 > **Angular Components**: If your component uses the Direction service, use the exported function `getDirection()` to supply the `[dir]` directive with the appropriate direction.
 
+[Live Example](https://pxblue-components.github.io/angular/?path=/story/components-score-card--with-full-config)
+
+
+### React Usage
+
+```ts
+import { getDirection } from '@pxblue/storybook-rtl-addon';
+
+export const reactExampleStory = () => {
+    const direction = getDirection();
+    return <div>{direction}</div>;
+}
+
+```
+[Live Example](https://pxblue-components.github.io/react/?path=/story/components-user-menu--within-toolbar)
+
+
+
 ### useDirection
-`useDirection` is a React hook that returns the current `Direction` and re-emits on every `Direction` change (when toggling the RTL sidebar button). It can be used to e.g. set values for Providers in a Decorators or Stories.
+`useDirection` is a React hook that returns the current `Direction` and re-emits on every `Direction` change (when toggling the RTL sidebar button). It can be used to set values for Providers in a Decorators or Stories.
 
 
 ```ts
@@ -53,46 +90,6 @@ export const decorators = [
     },
 ];
 ```
-
-## Examples
-
-PX Blue uses this addon extensively in our storybook documentation to guarantee bidirectional support of our components and examples.
-
-To see live-example usage of this addon, click on the "Story" tab of each linked example.
-
-### Angular
-
-```ts
-import { getDirection } from '@pxblue/storybook-rtl-addon';
-
-export const angularExampleStory = () => ({
-    template: `
-        <div>{{direction}}</div>
-    `,
-    props: {
-        direction: getDirection
-    }
-});
-
-```
-
-[Live Example](https://pxblue-components.github.io/angular/?path=/story/components-score-card--with-full-config)
-
-
-### React
-
-```ts
-import { getDirection } from '@pxblue/storybook-rtl-addon';
-
-export const reactExampleStory = () => {
-    const direction = getDirection();
-    return <div>{direction}</div>;
-}
-
-```
-[Live Example](https://pxblue-components.github.io/react/?path=/story/components-user-menu--within-toolbar)
-
-
 
 ## Tested Frameworks
 - Angular (^8.0.0)
