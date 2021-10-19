@@ -53,7 +53,7 @@ export const angularExampleStory = () => ({
 
 > **Angular Components**: If your component uses the Direction service, use the exported function `getDirection()` to supply the `[dir]` directive with the appropriate direction.
 
-[Live Example](https://pxblue-components.github.io/angular/?path=/story/components-score-card--with-full-config)
+[Live Example](https://brightlayer-ui-components.github.io/angular/?path=/story/components-score-card--with-full-config)
 
 
 ### React Usage
@@ -67,7 +67,7 @@ export const reactExampleStory = () => {
 }
 
 ```
-[Live Example](https://pxblue-components.github.io/react/?path=/story/components-user-menu--within-toolbar)
+[Live Example](https://brightlayer-ui-components.github.io/react/?path=/story/components-user-menu--within-toolbar)
 
 
 
