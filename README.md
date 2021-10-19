@@ -1,3 +1,3 @@
-# PX Blue Storybook Addons
+# Brightlayer UI Storybook Addons
 
 This repository contains custom Storybook addons.

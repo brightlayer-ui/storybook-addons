@@ -1,5 +1,5 @@
 {
-  "name": "@pxblue/storybook-rtl-addon",
+  "name": "@brightlayer-ui/storybook-rtl-addon",
   "version": "1.1.0",
   "description": "RTL Toggle for Storybook",
   "main": "dist/index.js",
@@ -15,39 +15,38 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pxblue/storybook-addons.git"
+    "url": "git+https://github.com/brightlayer-ui/storybook-addons.git"
   },
   "keywords": [
-    "pxblue",
+    "brightlayer-ui",
     "storybook",
     "addon",
     "addons",
     "rtl",
     "i18n",
     "bidirection",
-    "pxblue",
     "storybook-addon",
     "style"
   ],
   "storybook": {
-    "displayName": "@pxblue/storybook-rtl-addon",
+    "displayName": "@brightlayer-ui/storybook-rtl-addon",
     "unsupportedFrameworks": ["vue", "web-components", "ember", "html", "riot", "mithril", "marko", "svelte", "rax", "preact", "auerlia", "marionette", "react-native"],
     "supportedFrameworks": ["react, angular"],
-    "icon": "https://pxblue.github.io/pxblue.png"
+    "icon": "https://brightlayer-ui.github.io/brightlayer-ui.png"
   },
-  "author": "PX Blue <pxblue@eaton.com>",
+  "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/pxblue/storybook-addons/issues"
+    "url": "https://github.com/brightlayer-ui/storybook-addons/issues"
   },
-  "homepage": "https://github.com/pxblue/storybook-addons#readme",
+  "homepage": "https://github.com/brightlayer-ui/storybook-addons#readme",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
     "prettier": "prettier \"src/**/**.{ts,json,css,scss,html,tsx}\" --write",
     "prettier:check": "prettier \"src/**/**.{ts,json,css,scss,html}\" --check",
-    "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
-    "tag:package": "npx -p @pxblue/tag pxb-tag",
+    "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
+    "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
     "lint": "eslint \"src/**/**.tsx\"",
     "lint:fix": "eslint \"src/**/**.tsx\" --fix"
   },
@@ -61,8 +60,8 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
-    "@pxblue/eslint-config": "^2.0.1",
-    "@pxblue/prettier-config": "^1.0.2",
+    "@brightlayer-ui/eslint-config": "^2.0.1",
+    "@brightlayer-ui/prettier-config": "^1.0.2",
     "@storybook/addons": "5.3.19",
     "@storybook/api": "5.3.19",
     "@storybook/components": "5.3.19",
