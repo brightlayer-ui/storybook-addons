@@ -1,5 +1,12 @@
 # Change Log
 
+## v1.1.0 (October 21, 2021)
+
+### Added
+
+- Added `useDirection` React hook.
+
+
 ## v1.0.1 (May 21, 2021)
 
 ### Added

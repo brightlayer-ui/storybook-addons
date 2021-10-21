@@ -1,6 +1,6 @@
 {
   "name": "@pxblue/storybook-rtl-addon",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "RTL Toggle for Storybook",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,9 @@
     "dist",
     "README.md",
     "LICENSE",
-    "register.js"
+    "register.js",
+    "useDirection.js",
+    "useDirection.d.ts"
   ],
   "repository": {
     "type": "git",
@@ -45,6 +47,7 @@
     "prettier": "prettier \"src/**/**.{ts,json,css,scss,html,tsx}\" --write",
     "prettier:check": "prettier \"src/**/**.{ts,json,css,scss,html}\" --check",
     "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
+    "tag:package": "npx -p @pxblue/tag pxb-tag",
     "lint": "eslint \"src/**/**.tsx\"",
     "lint:fix": "eslint \"src/**/**.tsx\" --fix"
   },
