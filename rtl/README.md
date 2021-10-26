@@ -1,7 +1,7 @@
-![npm](https://img.shields.io/npm/v/@pxblue/storybook-rtl-addon?label=%40pxblue%2Fstorybook-rtl-addon)
+![npm](https://img.shields.io/npm/v/@brightlayer-ui/storybook-rtl-addon?label=%40brightlayer-ui%2Fstorybook-rtl-addon)
 
 
-# @pxblue/storybook-rtl-addon
+# @brightlayer-ui/storybook-rtl-addon
 
 This storybook addon provides a Right-to-Left toggle used to test your component's bidirectionality support.  
 When this addon is active, it sets the current story body's `dir` attribute to `rtl`.
@@ -11,16 +11,16 @@ This addon assumes the default text orientation of the parent storybook app is L
 
 ## Installation
 
-To install the `@pxblue/storybook-rtl-addon` run:
+To install the `@brightlayer-ui/storybook-rtl-addon` run:
 
 ```
-yarn add @pxblue/storybook-rtl-addon
+yarn add @brightlayer-ui/storybook-rtl-addon
 ```
 
 In your `main.js` file, register this addon:
 
 ```
-addons: ['@pxblue/storybook-rtl-addon/register']
+addons: ['@brightlayer-ui/storybook-rtl-addon/register']
 ```            
 
 ## Usage
@@ -31,14 +31,14 @@ This package exports two functions `getDirection` & `useDirection` that returns 
 `getDirection` is used within Stories to access the current `Direction`.  In React, this is value is only set during the initial component mount. 
 
 
-PX Blue uses this addon extensively in our storybook documentation to guarantee bidirectional support of our components and examples.
+Brightlayer UI uses this addon extensively in our storybook documentation to guarantee bidirectional support of our components and examples.
 
 To see live-example usage of this addon, click on the "Story" tab of each linked example.
 
 ### Angular Usage
 
 ```ts
-import { getDirection } from '@pxblue/storybook-rtl-addon';
+import { getDirection } from '@brightlayer-ui/storybook-rtl-addon';
 
 export const angularExampleStory = () => ({
     template: `
@@ -53,13 +53,13 @@ export const angularExampleStory = () => ({
 
 > **Angular Components**: If your component uses the Direction service, use the exported function `getDirection()` to supply the `[dir]` directive with the appropriate direction.
 
-[Live Example](https://pxblue-components.github.io/angular/?path=/story/components-score-card--with-full-config)
+[Live Example](https://brightlayer-ui-components.github.io/angular/?path=/story/components-score-card--with-full-config)
 
 
 ### React Usage
 
 ```ts
-import { getDirection } from '@pxblue/storybook-rtl-addon';
+import { getDirection } from '@brightlayer-ui/storybook-rtl-addon';
 
 export const reactExampleStory = () => {
     const direction = getDirection();
@@ -67,7 +67,7 @@ export const reactExampleStory = () => {
 }
 
 ```
-[Live Example](https://pxblue-components.github.io/react/?path=/story/components-user-menu--within-toolbar)
+[Live Example](https://brightlayer-ui-components.github.io/react/?path=/story/components-user-menu--within-toolbar)
 
 
 
@@ -76,7 +76,7 @@ export const reactExampleStory = () => {
 
 
 ```ts
-import useDirection from "@pxblue/storybook-rtl-addon/useDirection";
+import useDirection from "@brightlayer-ui/storybook-rtl-addon/useDirection";
 
 export const decorators = [
     (Story) => {
@@ -109,11 +109,11 @@ From another terminal, run:
 
 From your storybook app's root folder, run:
 
-```yarn link @pxblue/storybook-rtl-addon```
+```yarn link @brightlayer-ui/storybook-rtl-addon```
 
 When finished testing the local version of this addon, run:
 
-```yarn unlink @pxblue/storybook-rtl-addon```
+```yarn unlink @brightlayer-ui/storybook-rtl-addon```
 
 
 

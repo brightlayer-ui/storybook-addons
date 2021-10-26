@@ -51,7 +51,7 @@ jobs:
               echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
               echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
         - run:
-            name: Publish @pxblue/storybook-rtl-addon
+            name: Publish @brightlayer-ui/storybook-rtl-addon
             command:  |
               cd rtl && yarn publish:package -b $CIRCLE_BRANCH
     tag:
@@ -61,9 +61,9 @@ jobs:
         - checkout
         - gh/setup
         - run:
-            name: Tag @pxblue/storybook-rtl-addon
+            name: Tag @brightlayer-ui/storybook-rtl-addon
             command: |
-              cd rtl && yarn tag:package -b $CIRCLE_BRANCH
+              cd rtl && yarn tag:package -b $CIRCLE_BRANCH -s -blui-storybook-rtl-addon
 workflows:
     version: 2
     storybook-addons:
