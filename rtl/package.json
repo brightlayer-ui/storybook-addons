@@ -30,8 +30,24 @@
   ],
   "storybook": {
     "displayName": "@brightlayer-ui/storybook-rtl-addon",
-    "unsupportedFrameworks": ["vue", "web-components", "ember", "html", "riot", "mithril", "marko", "svelte", "rax", "preact", "auerlia", "marionette", "react-native"],
-    "supportedFrameworks": ["react, angular"],
+    "unsupportedFrameworks": [
+      "vue",
+      "web-components",
+      "ember",
+      "html",
+      "riot",
+      "mithril",
+      "marko",
+      "svelte",
+      "rax",
+      "preact",
+      "auerlia",
+      "marionette",
+      "react-native"
+    ],
+    "supportedFrameworks": [
+      "react, angular"
+    ],
     "icon": "https://brightlayer-ui.github.io/brightlayer-ui.png"
   },
   "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
@@ -48,7 +64,8 @@
     "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
     "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
     "lint": "eslint \"src/**/**.tsx\"",
-    "lint:fix": "eslint \"src/**/**.tsx\" --fix"
+    "lint:fix": "eslint \"src/**/**.tsx\" --fix",
+    "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json"
   },
   "peerDependencies": {
     "@storybook/addons": ">= 5.x",
@@ -72,6 +89,7 @@
     "@typescript-eslint/parser": "^3.7.0",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
+    "npm-license-crawler": "^0.2.1",
     "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
